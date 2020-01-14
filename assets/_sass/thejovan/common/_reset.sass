@@ -1,6 +1,6 @@
 body
   font-size: 16px
-  background: $soft-bg
+  background: $body-bg
   border: 1rem solid $main-border
   @media (max-width: 768px)
     font-size: 14px!important
@@ -26,11 +26,11 @@ body
 
 
 
-html
+body
   --hard-bg: #000000
   --soft-bg: #151515
   --negative-bg: #F4F4F4
-
+  --body-bg: #151515
 
   --accent: #4717F6
 
@@ -46,3 +46,28 @@ html
 
 
   --main-border: #363636
+
+
+  @media (prefers-color-scheme: light)
+    --hard-bg: #F8F8F8
+    --soft-bg: #fff
+    --negative-bg: #151515
+    --body-bg: #fff
+
+
+    --accent: #4717F6
+
+    --title-color: #000000
+    --negative-title-color: #F8F8F8
+
+    --paragraph-color: rgba(0, 0, 0, 0.7)
+    --negative-paragraph-color: rgba(256,256,256, 0.7)
+
+    --nav-item-color: #000
+    --nav-title-color: #fff
+    --nav-title-bg: #000
+
+
+    --main-border: #EFEFEF
+
+

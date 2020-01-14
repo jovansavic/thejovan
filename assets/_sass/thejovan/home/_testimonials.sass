@@ -1,0 +1,32 @@
+.testimonials-section
+  padding-top: 3rem
+  padding-bottom: 3rem
+  background: $hard-bg
+  .wrap
+    display: flex
+    justify-content: space-between
+    @media (max-width: $medium-bp)
+      flex-direction: column
+.testimonial
+  max-width: 360px
+  margin-top: 2rem
+  @media (max-width: $medium-bp)
+    max-width: 100%
+  .stars
+    margin-bottom: 1rem
+    background-image: url('/assets/images/star.svg')
+    background-size: 1.5rem
+    width: calc(1.5rem * 5.9)
+    height: 1.4rem
+    background-repeat: space repeat
+  .quote
+    font-size: 1.5rem
+    color: $paragraph-color
+    font-weight: 500
+    font-style: italic
+    margin-bottom: 1rem
+  aside
+    color: $paragraph-color
+    font-size: 1rem
+
+

@@ -1,14 +1,13 @@
 import $ from 'jquery';
 
 const Header = {
-  cloneForMobile: function() {
-    if ( $( window ).width() > 800 ) return false;
+  cloneMenu: function() {
 
     const $firstNav = $('.first-nav').clone(true);
     const $secondNav = $('.second-nav').clone(true);
 
-    $('#mobile-menu').append($firstNav);
-    $('#mobile-menu').append($secondNav);
+    $('#mobile-menu, .menu-items').append($firstNav);
+    $('#mobile-menu, .menu-items').append($secondNav);
   },
   toggleMobileMenu: function() {
     $('#menu-toggle').on('click', function() {
@@ -18,7 +17,7 @@ const Header = {
     });
   },
   init: function() {
-    this.cloneForMobile();
+    this.cloneMenu();
     this.toggleMobileMenu();
   },
 };
