@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Frasco: Jekyll Starter Project"
-email: your-email@domain.com
+title: "Jovan Savic Bridge the Gap Between Business Goals and Design"
+email: mail@jovansavic.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Quick starter project for Jekyll including full setup for gulp, Sass, Autoprefixer, Bourbon/Neat/Bitters, Browserify, imagemin, Browsersync, PostCSS etc.
+  Jovan is UI/UX/Web designer working with Startups and also other companies that grow Startup-like culture on increasing landing page conversion and product user experience.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ixkaito
-github_username:  ixkaito
+twitter_username: theesigner
+github_username:  johnofficial
 
 # Build settings
 markdown: kramdown

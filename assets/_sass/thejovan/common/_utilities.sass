@@ -61,6 +61,34 @@ $sides: (top, right, bottom, left)
 .p-basic
   padding: 2rem
 
+.section-padding
+  padding-left: 96px
+  padding-right: 96px
+  @media (max-width: $high-bp)
+    padding-right: 64px
+    padding-left: 64px
+  @media (max-width: $medium-bp)
+    padding-right: 32px
+    padding-left: 32px
+  @media (max-width: $small-bp)
+    padding-right: 16px
+    padding-left: 16px
+  @media (max-width: $smaller-bp)
+    padding-right: 8px
+    padding-left: 8px
+
+.section-padding-left
+  padding-left: 96px
+  @media (max-width: $high-bp)
+    padding-left: 64px
+  @media (max-width: $medium-bp)
+    padding-left: 32px
+  @media (max-width: $small-bp)
+    padding-left: 16px
+  @media (max-width: $smaller-bp)
+    padding-left: 8px
+
+
 // Display
 
 $display_values: (inline, block, flex, grid, inline-block, inline-flex, table, none, initial, inherit)
