@@ -1,0 +1,148 @@
+.site-header
+  left: 1rem
+  right: 1rem
+  padding-top: 1rem
+  padding-bottom: 1rem
+  background: $soft-bg
+  position: fixed
+  z-index: 999
+
+  nav
+    @media (max-width: 800px)
+      display: none
+
+  .header-wrap
+    max-width: 1440px
+    height: 48px
+    padding-left: 32px
+    padding-right: 32px
+
+    position: relative
+    display: flex
+    margin: auto
+    align-items: center
+
+    @media (max-width: $high-bp)
+      padding-left: 1rem
+      padding-right: 1rem
+
+    .first-nav
+      margin-right: auto
+      text-align: left
+      a
+        margin-right: 1.5rem
+        @media (max-width: 900px)
+          margin-right: .8rem
+
+    .second-nav
+      margin-left: auto
+      text-align: right
+      a
+        margin-left: 1.5rem
+        @media (max-width: 900px)
+          margin-left: .8rem
+
+    .header-title
+      margin: auto
+      display: block
+      width: 128px
+      height: 48px
+      position: absolute
+      left: 0
+      right: 0
+      top: 0
+
+      font-size: 1.5rem
+      font-weight: 600
+      padding: 10px
+      background: $nav-title-bg
+      color: $nav-title-color
+
+      @media (max-width: 800px)
+        right: auto
+        left: 1rem
+
+      h3
+        font-size: 1.5rem
+
+
+  a
+    color: $nav-item-color
+    text-decoration: none
+    font-weight: 500
+    font-size: 1rem
+
+
+
+
+.mobile-menu
+  @media (min-width: 801px)
+    display: none
+  position: fixed
+  top: -100vh
+  opacity: 0
+  transition: .3s
+  left: 1rem
+  right: 1rem
+  bottom: 1rem
+  background: $soft-bg
+  padding: 1rem
+
+  &.open
+    top: calc(2rem + 48px)
+    opacity: 1
+
+
+  .first-nav, .second-nav
+    text-align: left
+    a
+      display: block
+      font-size: 1.4rem
+      color: $nav-item-color
+      text-decoration: none
+      padding-top: .8rem
+      padding-bottom: .8rem
+
+
+.menu-toggle
+  @media (min-width: 801px)
+    display: none
+  width: 48px
+  height: 48px
+  background: $nav-title-bg
+  position: absolute
+  right: 1rem
+  top: 0
+
+  span,
+  span:before,
+  span:after
+    transition: .3s
+    display: block
+    content: ''
+    position: absolute
+    width: 32px
+    height: 2px
+    background: $nav-title-color
+  span
+    top: 50%
+    left: 8px
+
+  span:before
+    left: 0
+    top: -8px
+  span:after
+    left: 0
+    bottom: -8px
+
+  &.open
+    span,
+    span:before,
+    span:after
+      transform: rotate(45deg)
+    span:before
+      opacity: 0
+    span:after
+      opacity: 0
+
+
