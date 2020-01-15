@@ -25,13 +25,32 @@ const Header = {
     });
 
   },
+  themeSwitch: function() {
+    const theme = localStorage.hasOwnProperty('theme') ? localStorage.theme : 'dark';
+    const checked = theme == 'dark';
+    $('#theme-switch-checkbox').prop('checked', checked);
+    $('body').addClass(theme);
+
+    localStorage.setItem('theme', theme);
+
+    $('#theme-switch-checkbox').on('change', function() {
+      const newTheme = $(this).is(':checked') ? 'dark' : 'light';
+
+      $('body').addClass(newTheme);
+      $('body').removeClass(localStorage.theme);
+
+      localStorage.setItem('theme', newTheme);
+    });
+
+  },
   init: function() {
+    this.themeSwitch();
     this.cloneMenu();
     this.toggleMobileMenu();
     if ($(window).width() > 800 ) this.tooltip();
   },
 };
 
-$(window).on('load', function() {
+$(document).ready( function() {
   Header.init();
 });
