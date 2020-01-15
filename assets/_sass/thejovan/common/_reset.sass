@@ -17,6 +17,11 @@ body
     top: 0
     height: 1rem
     background: $main-border
+  @media (max-width: $small-bp)
+    border: none
+    &:before
+      display: none
+
 
 *
   margin: 0
