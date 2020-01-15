@@ -16,9 +16,19 @@ const Header = {
 
     });
   },
+  tooltip: function() {
+    $('.site-header a[title]').hover(function() {
+      const $tooltip = `<aside class="tooltip">${$(this).attr('title')}</aside>`;
+      $(this).append($tooltip);
+    }, function() {
+      $(this).find('.tooltip').remove();
+    });
+
+  },
   init: function() {
     this.cloneMenu();
     this.toggleMobileMenu();
+    if ($(window).width() > 800 ) this.tooltip();
   },
 };
 
