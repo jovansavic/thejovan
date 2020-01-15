@@ -17,8 +17,8 @@ const Header = {
     });
   },
   tooltip: function() {
-    $('.site-header a[title]').hover(function() {
-      const $tooltip = `<aside class="tooltip">${$(this).attr('title')}</aside>`;
+    $('.site-header a[data-title]').hover(function() {
+      const $tooltip = `<aside class="tooltip">${$(this).attr('data-title')}</aside>`;
       $(this).append($tooltip);
     }, function() {
       $(this).find('.tooltip').remove();

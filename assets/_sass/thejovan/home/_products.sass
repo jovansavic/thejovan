@@ -1,0 +1,31 @@
+.long-cta-section
+  padding-top: 6rem
+  padding-bottom: 6rem
+  background: $hard-bg
+
+  h2
+    max-width: 800px
+    margin-bottom: 2rem
+
+
+  .products
+    display: flex
+    flex-wrap: wrap
+    max-width: 720px
+    justify-content: space-between
+    .product
+      margin-bottom: 2rem
+      width: 100%
+      max-width: 320px
+      text-decoration: none
+      color: $title-color
+      //margin-right: 3rem
+      @media (max-width: $small-bp)
+        margin-right: 0
+      img
+        width: 100%
+        border: 8px solid $main-border
+      h5
+        font-size: 1.5rem
+        margin-top: 1rem
+
