@@ -1,0 +1,94 @@
+.article .wrap
+  max-width: 800px
+
+.article-header
+  display: flex
+  align-items: flex-start
+  margin-bottom: 2rem
+  flex-wrap: wrap
+  @media (min-width: $small-bp)
+    flex-wrap: nowrap
+
+
+  .title, .article-meta
+    @media (min-width: $small-bp)
+      margin: 0 1rem
+
+
+  img
+    width: 100%
+    border: .5rem solid $main-border
+    @media (min-width: $small-bp)
+      max-width: 30%
+
+
+.article-content
+  overflow: hidden
+  margin-top: 4rem
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  //flex-wrap: wrap-reverse
+  z-index: 0
+
+  .content-nav
+    width: 100%
+    @media (min-width: $medium-bp)
+      width: 39%
+      max-width: 320px
+
+    .list
+      //background: rgba(0,0,0,0.05)
+      padding: 1rem
+      li
+        list-style-type: none
+        margin: .5rem auto
+        transition: .2s
+        &:hover
+          background: $main-border
+        &.active
+          background: $accent
+          a
+            color: white
+        a
+          text-decoration: none
+          display: inline-block
+          padding: .5rem
+          font-weight: 500
+
+    &.sticky
+      transition: .3s
+      @media (min-width: $medium-bp)
+        position: fixed
+        top: 100px
+        right: 0
+
+
+
+  .main
+    max-width: 720px
+
+
+  h2, h3
+    font-weight: 800
+
+  p
+    margin: 1rem auto
+    font-size: 1.2rem
+    color: $title-color
+    font-weight: 300
+    line-height: 1.7
+
+
+  img
+    margin: 2rem auto
+    max-width: 100%
+
+  a
+    color: $nav-item-color
+
+
+  figure
+    color: $title-color
+    padding: 1rem
+    background: $hard-bg

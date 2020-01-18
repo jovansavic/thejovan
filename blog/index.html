@@ -1,0 +1,55 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Blog Posts
+---
+
+<section class="blog-header section-padding pt-8 pb-8">
+	<h1 class="title">The Blog</h1>
+</section>
+
+
+<section class="posts-section section-padding">
+
+	<div class="wrap">
+	{% for post in paginator.posts %}
+
+	<a href="{{ post.url }}" class="post-link">
+		<div class="post">
+
+			<!--Post Image-->
+			{% if post.remote_thumbnail %}
+			<img src="{{post.remote_thumbnail}}" alt="Thumbnail of {{ post.title }}" title="{{ post.title }}">
+			{% else %}
+			<img src="/assets/images/blog/{{post.local_thumbnail}}" alt="Thumbnail of {{ post.title }}" title="{{ post.title }}">
+			{% endif %}
+
+			<!--Post Title-->
+			<h2 class="title">{{ post.title }}</h2>
+
+		</div>
+	</a>
+
+	{% endfor %}
+	</div>
+
+</section>
+
+<section class="pagination-section section-padding pt-4 pb-4">
+	<!-- Pagination links -->
+	<div class="pagination">
+		{% if paginator.previous_page and paginator.page > 1 %}
+		<a href="{{ paginator.previous_page_path }}" class="previous">
+			Previous
+		</a>
+		{% endif %}
+		<span class="page-number">
+			<span>{{ paginator.page }}</span> of <span>{{ paginator.total_pages }}</span>
+		</span>
+		{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+		{% endif %}
+	</div>
+</section>

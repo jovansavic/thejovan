@@ -26,12 +26,16 @@ github_username:  johnofficial
 # Build settings
 markdown: kramdown
 # theme: minima
+
+permalink: /blog/:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-paginate
 
 include: ["_pages"]
+paginate: 6
+paginate_path: "/blog/:num/"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -53,3 +57,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - yarn.lock
+

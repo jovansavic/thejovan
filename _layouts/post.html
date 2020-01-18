@@ -1,11 +1,20 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="article h-entry section-padding pt-8" itemscope itemtype="http://schema.org/Blogarticleing">
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
+	<div class="wrap">
+
+  <header class="article-header">
+		<!--Post Image-->
+		{% if page.remote_thumbnail %}
+		<img src="{{page.remote_thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
+		{% else %}
+		<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
+		{% endif %}
+		<div>
+    <h1 class="title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="article-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
@@ -13,10 +22,17 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+		</div>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+  <div class="article-content e-content" itemprop="articleBody">
+		<div class="main">
+			{{ content }}
+		</div>
+<!--		<aside class="content-nav">-->
+<!--			<img src="{{ '/assets/images/hero-jovan.png' | relative_url }}" alt="Image of Jovan Savic" title="Look! It's me!">-->
+<!--			-->
+<!--		</aside>-->
   </div>
 
   {%- if site.disqus.shortname -%}
@@ -24,4 +40,6 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+	</div>
 </article>

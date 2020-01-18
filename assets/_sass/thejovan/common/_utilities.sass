@@ -83,7 +83,10 @@ $sides: (top, right, bottom, left)
   @media (max-width: $small-bp)
     padding-left: 16px
 
-
+.bouncy
+  @media (min-width: $medium-bp)
+    &:hover
+      animation: ctabounce1 400ms ease-in-out forwards
 // Display
 
 $display_values: (inline, block, flex, grid, inline-block, inline-flex, table, none, initial, inherit)
