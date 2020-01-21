@@ -27,7 +27,7 @@ github_username:  johnofficial
 markdown: kramdown
 # theme: minima
 
-permalink: /blog/:title/
+permalink: /:title/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
