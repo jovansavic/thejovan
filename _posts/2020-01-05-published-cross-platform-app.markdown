@@ -4,6 +4,7 @@ title:  "I published App I been working on and this happened..."
 date:   2020-01-05
 categories: design development products
 local_thumbnail: published-cross-platform-app.png
+published: true
 ---
 
 
