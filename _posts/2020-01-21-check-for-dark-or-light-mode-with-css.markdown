@@ -3,7 +3,7 @@ layout: post
 title:  "Detect dark or light mode with CSS"
 date:   2020-01-21
 categories: design development products
-local_thumbnail: published-cross-platform-app.png
+local_thumbnail: dark-and-light-mode.png
 published: true
 ---
 
