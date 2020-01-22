@@ -1,0 +1,37 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Blog Posts
+permalink: /work/
+---
+
+<section class="blog-header section-padding pt-8 pb-8">
+	<h1 class="title">Work</h1>
+</section>
+
+<section class="posts-section section-padding">
+
+	<div class="wrap">
+		{% assign sorted_projects = (site.projects | sort: 'place') | reverse %}
+		{% for project in sorted_projects %}
+		{% if project.published %}
+
+		<a href="{{ project.url }}" class="post-link">
+			<div class="post">
+
+				<!--Post Image-->
+				<img src="/assets/images/work/{{project.thumbnail}}" alt="Thumbnail of {{ project.title }}" title="{{ project.title }}">
+
+				<!--Post Title-->
+				<h2 class="title">{{ project.title }}</h2>
+
+			</div>
+		</a>
+
+		{% endif %}
+		{% endfor %}
+	</div>
+
+</section>

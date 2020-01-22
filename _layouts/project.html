@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="article h-entry section-padding pt-8 pb-8" itemscope itemtype="http://schema.org/Blogarticleing">
+
+	<div class="wrap">
+
+  <header class="article-header">
+		<!-- Project Image -->
+		<img src="/assets/images/work/{{page.thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
+		<div>
+    <h1 class="title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="article-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+		</div>
+  </header>
+
+  <div class="article-content e-content" itemprop="articleBody">
+		<div class="main markdown-body">
+			{{ content }}
+		</div>
+<!--		<aside class="content-nav">-->
+<!--			<img src="{{ '/assets/images/hero-jovan.png' | relative_url }}" alt="Image of Jovan Savic" title="Look! It's me!">-->
+<!--			-->
+<!--		</aside>-->
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+	</div>
+</article>
+
+{% include homepage/cta.html %}

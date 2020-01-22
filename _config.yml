@@ -33,6 +33,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
+
+collections:
+  projects:
+    output: true
+    permalink: /:path/
+
 include: ["_pages"]
 paginate: 6
 paginate_path: "/blog/:num/"
