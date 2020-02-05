@@ -26,7 +26,7 @@ const Header = {
 
   },
   themeSwitch: function() {
-    const theme = localStorage.hasOwnProperty('theme') ? localStorage.theme : 'dark';
+    const theme = localStorage.hasOwnProperty('theme') ? localStorage.theme : 'light';
     const checked = theme == 'dark';
     $('#theme-switch-checkbox').prop('checked', checked);
     $('body').addClass(theme);
