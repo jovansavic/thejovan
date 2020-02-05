@@ -3,6 +3,14 @@
 
 .markdown-body {
 
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1.5;
+	}
+
+	h2, h3, h4 {
+		font-weight: 600;
+	}
+
   blockquote {
     border-left: 5px solid $hard-bg;
     padding: .2rem 1rem;
