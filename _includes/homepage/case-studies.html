@@ -1,0 +1,27 @@
+<section class="long-cta-section case-studies-section section-padding">
+	<div class="wrap">
+		<h2 class="title">Read some for client-work case studies</h2>
+
+		<div class="case-studies">
+			{% assign sorted_projects = (site.projects | sort: 'place') | reverse %}
+			{% for project in sorted_projects limit: 3 %}
+			{% if project.published %}
+
+			<a href="{{ project.url }}" class="product bouncy">
+				<div class="post">
+
+					<!--Post Image-->
+					<img src="/assets/images/work/{{project.thumbnail}}" alt="Thumbnail of {{ project.title }}" title="{{ project.title }}">
+
+					<!--Post Title-->
+					<h2 class="title">{{ project.title }}</h2>
+
+				</div>
+			</a>
+
+			{% endif %}
+			{% endfor %}
+		</div>
+
+	</div>
+</section>
