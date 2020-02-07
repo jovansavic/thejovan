@@ -13,7 +13,7 @@ User experience is every interaction with products you ever had. From driving a 
 <br>
 
 ## What is User Experience Design?
-UX Design improving the existing experience so that products can be more useful, usable, and desirable. 
+UX Design is improving the existing experience so that products can be more useful, usable, and desirable. 
 <br><br>
 - Useful: Does a product serve the purpose?
 - Usable: How easy is it to use a product?
