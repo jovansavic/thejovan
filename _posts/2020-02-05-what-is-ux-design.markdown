@@ -10,7 +10,7 @@ published: true
 # What is user experience (UX)?
 User experience is every interaction with products you ever had. From driving a bike to downloading and using an app. How did you feel when you tried to open that package, or when you went somewhere and wait a long long time? Bad? Well, that's probably some bad user experience. How did you feel when you opened that new iPhone box? Good? That's because of good User Experience!
 
-<br>
+<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">
 
 ## What is User Experience Design?
 UX Design is improving the existing experience so that products can be more useful, usable, and desirable. 

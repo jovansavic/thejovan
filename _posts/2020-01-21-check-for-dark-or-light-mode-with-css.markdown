@@ -11,6 +11,7 @@ published: true
 ## How to check users preferred theme mode?
 You can do it easily with the amazing **prefers-color-scheme** media feature. Scroll down for more.
 
+<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">
 <br>
 
 ## Dark mode check

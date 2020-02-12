@@ -6,12 +6,6 @@ layout: default
 	<div class="wrap">
 
   <header class="article-header">
-		<!--Post Image-->
-		{% if page.remote_thumbnail %}
-		<img src="{{page.remote_thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
-		{% else %}
-		<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
-		{% endif %}
 		<div>
     <h1 class="title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="article-meta">
@@ -29,10 +23,6 @@ layout: default
 		<div class="main markdown-body">
 			{{ content }}
 		</div>
-<!--		<aside class="content-nav">-->
-<!--			<img src="{{ '/assets/images/hero-jovan.png' | relative_url }}" alt="Image of Jovan Savic" title="Look! It's me!">-->
-<!--			-->
-<!--		</aside>-->
   </div>
 
   {%- if site.disqus.shortname -%}

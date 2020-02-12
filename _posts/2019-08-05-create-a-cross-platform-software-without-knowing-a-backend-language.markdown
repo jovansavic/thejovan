@@ -9,6 +9,7 @@ published: true
 
 If me, as Web Designer managed to successfully build cross-platform (OSX, Windows, Linux) software, with user authentication and real-time database, then you can either!
 
+<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">
 
 ### Why would we do something like that?
 

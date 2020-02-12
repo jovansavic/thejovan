@@ -7,6 +7,7 @@ local_thumbnail: published-cross-platform-app.png
 published: true
 ---
 
+<img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">
 
 Some time ago, I needed a time tracking app for some of my projects. The good thing is that there is a lot of time tracking apps!
 But, of course, If I were satisfied with some of them, I wouldn't make this post :D 
