@@ -8,7 +8,7 @@ published: true
 ---
 
 ## Bad contrast, no white space, and text inconsistency. 
-Those 3 mistakes can make your website look amateur (but don't worry, everyone made those mistakes), but if you take some time to fix them you will have a great looking website.
+These 3 mistakes can make your website look amateur (but don't worry, everyone made these mistakes), but if you take some time to fix them you will have a great looking website.
 
 <img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">
 
