@@ -16,7 +16,7 @@ title: Blog Posts
 	<div class="wrap">
 	{% for post in paginator.posts %}
 
-	<a href="{{ post.url }}" class="post-link">
+	<a href="{{ post.url }}" class="post-link bouncy">
 		<div class="post">
 
 			<!--Post Image-->
@@ -33,6 +33,7 @@ title: Blog Posts
 	</a>
 
 	{% endfor %}
+		<div class="post-link"></div>
 	</div>
 
 </section>

@@ -18,12 +18,14 @@
     .product
       margin-bottom: 2rem
       width: 100%
-      max-width: 320px
       text-decoration: none
       color: $title-color
       //margin-right: 3rem
       @media (max-width: $small-bp)
         margin-right: 0
+
+      @media (min-width: $medium-bp)
+        width: 30%
       img
         width: 100%
         border: 8px solid $main-border

@@ -43,10 +43,25 @@ const Header = {
     });
 
   },
+  imageModal: function() {
+    const $modal = $('.image-modal').clone();
+    $('.image-modal').remove();
+    $('body').on('click', '.article-content img', function(e) {
+      e.preventDefault();
+      const $clonedImage = $(this).clone(true);
+      $modal.html($clonedImage);
+      $('body').append($modal);
+    });
+    $('body').on('click', '.image-modal', function(e) {
+      e.preventDefault();
+      $('.image-modal').remove();
+    });
+  },
   init: function() {
     this.themeSwitch();
     this.cloneMenu();
     this.toggleMobileMenu();
+    this.imageModal();
     if ($(window).width() > 800 ) this.tooltip();
   },
 };

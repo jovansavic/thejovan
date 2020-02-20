@@ -12,14 +12,14 @@ permalink: /work/
 	<p class="paragraph mw-720">On this page I presented only case studies, if you want to see more, visit my <a target="_blank" href="https://dribbble.com/{{site.dribbble_username}}">Dribbble</a> or <a target="_blank" href="https://www.behance.net/{{site.behance_username}}">Behance</a> profile.</p>
 </section>
 
-<section class="posts-section section-padding">
+<section class="posts-section work section-padding">
 
 	<div class="wrap">
 		{% assign sorted_projects = (site.projects | sort: 'place') | reverse %}
 		{% for project in sorted_projects %}
 		{% if project.published %}
 
-		<a href="{{ project.url }}" class="post-link">
+		<a href="{{ project.url }}" class="post-link bouncy">
 			<div class="post">
 
 				<!--Post Image-->

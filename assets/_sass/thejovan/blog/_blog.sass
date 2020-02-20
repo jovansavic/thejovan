@@ -2,18 +2,23 @@
   .wrap
     display: flex
     flex-wrap: wrap
+    justify-content: space-between
   a
     text-decoration: none
 
 
 .post-link
   width: 100%
+  margin-bottom: 1rem
   @media (min-width: $medium-bp)
-    max-width: 47%
-    margin: 1.5%
-  @media (min-width: $high-bp)
-    max-width: 29%
-    margin: 2%
+    width: 30%
+    margin-bottom: 3%
+.work
+  .post-link
+    @media (min-width: $medium-bp)
+      width: 47%
+      .title
+        font-size: 2rem
 .post
   //overflow: hidden
   @media (min-width: $medium-bp)
