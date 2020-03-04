@@ -7,26 +7,30 @@ title: Blog Posts
 permalink: /work/
 ---
 
-<section class="blog-header section-padding pt-8 pb-8">
-	<h1 class="title">Work</h1>
-	<p class="paragraph mw-720">On this page I presented only case studies, if you want to see more, visit my <a target="_blank" href="https://dribbble.com/{{site.dribbble_username}}">Dribbble</a> or <a target="_blank" href="https://www.behance.net/{{site.behance_username}}">Behance</a> profile.</p>
-</section>
-
-<section class="posts-section work section-padding">
+<!--<section class="blog-header section-padding pt-8 pb-8">-->
+<!--	</section>-->
+<div class="wrap m-auto section-padding pt-8 pb-8">
+	<h1 class="title">Case Studies</h1>
+	<p class="paragraph mw-720">Learn more about my process and thoughts by reading case studies.</p>
+</div>
+<section class="work-section section-padding">
 
 	<div class="wrap">
 		{% assign sorted_projects = (site.projects | sort: 'place') | reverse %}
 		{% for project in sorted_projects %}
 		{% if project.published %}
 
-		<a href="{{ project.url }}" class="post-link bouncy">
-			<div class="post">
+		<a href="{{ project.url }}" class="project-link bouncy">
+			<div class="project">
 
 				<!--Post Image-->
 				<img src="/assets/images/work/{{project.thumbnail}}" alt="Thumbnail of {{ project.title }}" title="{{ project.title }}">
 
 				<!--Post Title-->
-				<h2 class="title">{{ project.title }}</h2>
+				<div class="text">
+					<h2 class="title">{{ project.title }}</h2>
+<!--					<p class="description">{{ project.description }}</p>-->
+				</div>
 
 			</div>
 		</a>
@@ -37,8 +41,38 @@ permalink: /work/
 
 </section>
 
+<div class="wrap m-auto section-padding pt-8 pb-4">
+	<h1 class="title">Random Work</h1>
+	<p class="paragraph mw-720">Just thumbnails of previous projects, no process or any description. If you want to see more, visit my <a target="_blank" href="https://dribbble.com/{{site.dribbble_username}}">Dribbble</a> or <a target="_blank" href="https://www.behance.net/{{site.behance_username}}">Behance</a> profile.</p>
+</div>
+<div class="behance-projects section-padding m-auto pb-6">
+	<img src="/assets/images/behance/01.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/02.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/03.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/04.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/05.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/07.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/08.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/10.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+	<img src="/assets/images/behance/09.png" alt="UX Designer" class="bouncy" title="{{ Behance Thumbnail }}">
+</div>
+
 <section class="testimonials-section work-testimonials section-padding">
 	<div class="wrap">
+
+		<div class="testimonial">
+			<div class="stars">
+			</div>
+			<h6 class="quote">
+				Jovan is a fantastic designer. Most designers design for the purpose of design, Jovan has an approach to design that makes a lot more sense to me, as a product person, and CEO of a SAAS company. He focuses primarily on the goal of the design, and not in an annoying way like a lot of designers do, but in a way we're he renders the design around that goal and purpose.
+				<br>
+				<br>
+				I highly recommend working with him, he does a lot of research on his own, which means that you are able to output a lot more than you would with other designers
+
+			</h6>
+			<aside>Emil H.</aside>
+			<aside class="work-title">CEO, Helpjuice</aside>
+		</div>
 
 		<div class="testimonial">
 			<div class="stars"></div>
@@ -46,7 +80,7 @@ permalink: /work/
 				“Jovan is the best! Great UX designer, both for apps and the web!“
 			</h6>
 			<aside>Milo M.</aside>
-			<aside>Software Dev / Team Leader</aside>
+			<aside class="work-title">Software Dev / Team Leader</aside>
 		</div>
 
 		<div class="testimonial">
@@ -54,10 +88,10 @@ permalink: /work/
 
 			</div>
 			<h6 class="quote">
-				“Jovan is an excellent freelancer! He has delivered more and once at short notice and his work is always on point.“
+				"Fantastic Work! So accommodating and very helpful in communicating the technical side of his work."
 			</h6>
 			<aside>Vanessa P.</aside>
-			<aside>Director</aside>
+			<aside class="work-title">Director</aside>
 		</div>
 
 		<div class="testimonial">
@@ -70,7 +104,7 @@ permalink: /work/
 				Knows his stuff very well“
 			</h6>
 			<aside>Phil M.</aside>
-			<aside>Ex. PM at Microsoft</aside>
+			<aside class="work-title">Ex. PM at Microsoft</aside>
 		</div>
 	</div>
 </section>

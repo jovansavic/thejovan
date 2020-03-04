@@ -1,0 +1,51 @@
+.work-section
+  .wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .project-link
+    width: 100%
+    text-decoration: none
+    @media (min-width: $medium-bp)
+      max-width: 48%
+
+  .project
+    display: flex
+    flex-wrap: wrap
+    margin-bottom: 3rem
+    @media (min-width: $medium-bp)
+      flex-wrap: nowrap
+    .text
+      margin-top: 1rem
+      @media (min-width: $medium-bp)
+        padding-left: 1rem
+    .title
+      font-size: 1rem
+      margin: 0
+      font-weight: 500
+      @media (min-width: $high-bp)
+        font-size: 1.5rem
+      @media (max-width: $small-bp)
+        font-size: 1.5rem
+    .description
+      margin: 0
+      margin-top: .5rem
+    img
+      align-self: flex-start
+      border: .5rem solid $main-border
+      @media (min-width: $medium-bp)
+        width: 40%
+
+
+.behance-projects
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  img
+    width: 100%
+    margin-bottom: 2rem
+    max-width: 100%
+    align-self: flex-start
+    @media (min-width: $medium-bp)
+      max-width: 31%

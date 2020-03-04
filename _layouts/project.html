@@ -1,13 +1,12 @@
 ---
 layout: default
 ---
-<article class="h-entry pt-8 pb-8" itemscope itemtype="http://schema.org/Blogarticleing">
+<article class="h-entry pt-8" itemscope itemtype="http://schema.org/Blogarticleing">
 
 	<div class="wrap">
 
   <header class="article-header mw-920 m-auto section-padding">
 		<!-- Project Image -->
-		<img src="/assets/images/work/{{page.thumbnail}}" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
 		<div>
     <h1 class="title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="article-meta">
@@ -31,6 +30,10 @@ layout: default
 
 
 </article>
+
+<div class="mw-920 m-auto section-padding pb-8">
+	<img src="/assets/images/work/{{page.thumbnail}}" class="w-100" alt="Thumbnail of {{ page.title }}" title="{{ page.title }}">
+</div>
 
 <div class="article-content markdown-body" itemprop="articleBody">
 	{{ content }}

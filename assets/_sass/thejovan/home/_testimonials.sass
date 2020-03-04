@@ -9,13 +9,16 @@
   .wrap
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     @media (max-width: $medium-bp)
       flex-direction: column
 .testimonial
-  max-width: 360px
+  max-width: 48%
   margin-top: 2rem
   @media (max-width: $medium-bp)
     max-width: 100%
+  //&.double
+  //  max-width: 720px
   .stars
     margin-bottom: 1rem
     background-image: url('/assets/images/star.svg')
@@ -24,13 +27,16 @@
     height: 1.4rem
     background-repeat: space repeat
   .quote
-    font-size: 1.5rem
+    font-size: 1rem
     color: $title-color
-    font-weight: 500
+    font-weight: 400
+    line-height: 1.5
     font-style: italic
     margin-bottom: 1rem
   aside
     color: $paragraph-color
     font-size: 1rem
+    &.work-title
+      font-weight: 600
 
 
