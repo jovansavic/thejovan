@@ -30,6 +30,9 @@ linkedin_username: designedbyjovan
 product_hunt_username: '@jovansavic'
 
 
+site_theme: ''
+
+
 # Build settings
 markdown: kramdown
 # theme: minima
