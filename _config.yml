@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Jovan Savic Bridge the Gap Between Business Goals and Design"
-email: mail@jovansavic.com
+email: mail@jovan.design
 description: >- # this means to ignore newlines until "baseurl:"
   Jovan is UI/UX/Web designer working with Startups and also other companies that grow Startup-like culture on increasing landing page conversion and product user experience.
 
