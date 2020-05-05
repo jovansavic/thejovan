@@ -3,11 +3,23 @@
   padding-bottom: 5rem
   background: $negative-bg
 
-  h3
-    font-size: 2rem
-    font-weight: 500
+  h3, p
     max-width: 720px
+
+  h3
+    font-size: 4rem
+    font-weight: 900
+    max-width: 720px
+    margin-bottom: 2rem
     color: $negative-title-color
 
     @media (max-width: $small-bp)
       font-size: 1.5rem
+
+  p
+    color: $negative-paragraph-color
+    &.no
+      font-style: italic
+
+    strong
+      color: $negative-title-color
