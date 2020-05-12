@@ -15,7 +15,6 @@ layout: default
 	<div class="wrap">
 		{% assign sorted_projects = (site.projects | sort: 'place') | reverse %}
 		{% for project in sorted_projects %}
-		{% if project.published %}
 
 		<a href="{{ project.url }}" class="project-link bouncy">
 			<div class="project">
@@ -32,7 +31,6 @@ layout: default
 			</div>
 		</a>
 
-		{% endif %}
 		{% endfor %}
 	</div>
 
