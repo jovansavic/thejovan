@@ -17,8 +17,8 @@ layout: default
 		<div class="post">
 
 			<!--Post Image-->
-			{% if post.remote_thumbnail %}
-			<img src="{{post.remote_thumbnail}}" alt="Thumbnail of {{ post.title }}" title="{{ post.title }}">
+			{% if post.thumbnail %}
+			<img src="{{post.thumbnail}}" alt="Thumbnail of {{ post.title }}" title="{{ post.title }}">
 			{% else %}
 			<img src="/assets/images/blog/{{post.local_thumbnail}}" alt="Thumbnail of {{ post.title }}" title="{{ post.title }}">
 			{% endif %}
