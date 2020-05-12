@@ -1,10 +1,12 @@
 ---
+title: 3 Common UI Design Mistakes & How to Fix them
+date: 2020-02-20 00:00:00 Z
+categories:
+- ui
+- design
+- ui-design
 layout: post
-title:  "3 Common UI Design Mistakes & How to Fix them"
-date:   2020-02-20
-categories: ui design ui-design
 local_thumbnail: 3-common-ui-mistakes.png
-published: true
 ---
 
 ## Bad contrast, no white space, and text inconsistency. 

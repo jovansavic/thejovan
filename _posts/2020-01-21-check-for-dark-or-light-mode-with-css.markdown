@@ -1,12 +1,13 @@
 ---
+title: Detect dark or light mode with CSS
+date: 2020-01-21 00:00:00 Z
+categories:
+- design
+- development
+- products
 layout: post
-title:  "Detect dark or light mode with CSS"
-date:   2020-01-21
-categories: design development products
 local_thumbnail: dark-and-light-mode.png
-published: true
 ---
-
 
 ## How to check users preferred theme mode?
 You can do it easily with the amazing **prefers-color-scheme** media feature. Scroll down for more.

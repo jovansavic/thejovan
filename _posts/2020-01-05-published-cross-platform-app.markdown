@@ -1,10 +1,12 @@
 ---
+title: I published App I been working on and this happened...
+date: 2020-01-05 00:00:00 Z
+categories:
+- design
+- development
+- products
 layout: post
-title:  "I published App I been working on and this happened..."
-date:   2020-01-05
-categories: design development products
 local_thumbnail: published-cross-platform-app.png
-published: true
 ---
 
 <img src="/assets/images/blog/{{page.local_thumbnail}}" alt="" style="width: 100%;">

@@ -1,10 +1,14 @@
 ---
+title: Yes! It's possible to create a cross-platform software without knowing a backend
+  language.
+date: 2019-08-05 00:00:00 Z
+categories:
+- design
+- development
+- products
+- electron
 layout: post
-title:  "Yes! It's possible to create a cross-platform software without knowing a backend language."
-date:   2019-08-05
-categories: design development products electron
 local_thumbnail: back-end-for-designers.png
-published: true
 ---
 
 If me, as Web Designer managed to successfully build cross-platform (OSX, Windows, Linux) software, with user authentication and real-time database, then you can either!

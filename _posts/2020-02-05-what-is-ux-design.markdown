@@ -1,10 +1,12 @@
 ---
+title: What is UX design? - Explained by UX Designer
+date: 2020-02-05 00:00:00 Z
+categories:
+- ux
+- design
+- ux-design
 layout: post
-title:  "What is UX design? - Explained by UX Designer"
-date:   2020-02-05
-categories: ux design ux-design
 local_thumbnail: what-is-ux-design.png
-published: true
 ---
 
 # What is user experience (UX)?

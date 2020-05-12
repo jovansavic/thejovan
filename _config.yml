@@ -1,76 +1,56 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: "Jovan Savic Bridge the Gap Between Business Goals and Design"
+---
+title: Jovan Savic Bridge the Gap Between Business Goals and Design
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: true
+    permalink: "/:path/"
+  uploads:
+    title: Uploads
+    output: true
 email: mail@jovan.design
-description: >- # this means to ignore newlines until "baseurl:"
-  Jovan is UI/UX/Web designer working with Startups and also other companies that grow Startup-like culture on increasing landing page conversion and product user experience.
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  johnofficial
+description: Jovan is UI/UX/Web designer working with Startups and also other companies
+  that grow Startup-like culture on increasing landing page conversion and product
+  user experience.
+baseurl: ''
+url: ''
+github_username: johnofficial
 behance_username: designedbyjovan
 dribbble_username: designedbyjovan
 instagram_username: designedbyjovan
 facebook_username: designedbyjovan
 twitter_username: designedbyjovan
 linkedin_username: designedbyjovan
-product_hunt_username: '@jovansavic'
-
-
+product_hunt_username: "@jovansavic"
 site_theme: ''
-
-
-# Build settings
 markdown: kramdown
-# theme: minima
-
-permalink: /blog/:title/
+permalink: "/blog/:title/"
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-
-
-collections:
-  projects:
-    output: true
-    permalink: /:path/
-
-include: ["_pages"]
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-paginate
+include:
+- _pages
 paginate: 6
 paginate_path: "/blog/:num/"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
 exclude:
-  - frasco.config.js
-  - Gemfile
-  - Gemfile.lock
-  - gulp_tasks
-  - gulpfile.js
-  - LICENSE
-  - node_modules
-  - npm-debug.log
-  - package.json
-  - package-lock.json
-  - README.md
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - yarn.lock
-
+- frasco.config.js
+- Gemfile
+- Gemfile.lock
+- gulp_tasks
+- gulpfile.js
+- LICENSE
+- node_modules
+- npm-debug.log
+- package.json
+- package-lock.json
+- README.md
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- yarn.lock

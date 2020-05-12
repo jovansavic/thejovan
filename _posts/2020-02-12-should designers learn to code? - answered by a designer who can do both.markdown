@@ -1,10 +1,12 @@
 ---
+title: Should Designers Learn to Code? - Answered by a designer who can do both
+date: 2020-02-12 00:00:00 Z
+categories:
+- ux
+- design
+- ux-design
 layout: post
-title:  "Should Designers Learn to Code? - Answered by a designer who can do both"
-date:   2020-02-12
-categories: ux design ux-design
 local_thumbnail: should-you-learn-code.png
-published: true
 ---
 
 ## Both, yes and no! 
