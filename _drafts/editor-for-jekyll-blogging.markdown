@@ -1,7 +1,7 @@
 ---
 title: Editor for Jekyll Blogging
 date: 2020-05-12 08:57:00 Z
-Field name: 
+thumbnail: "/uploads/social-media-preview.png"
 layout: post
 ---
 
