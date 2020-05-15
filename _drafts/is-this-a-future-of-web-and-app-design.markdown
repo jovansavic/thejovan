@@ -14,8 +14,6 @@ Do you want to use real-life data and dynamically show elements in your prototyp
 
 It seems there is a way to create prototypes that are so good, no one will assume it's not production-ready! 
 
-![framerX.png](/uploads/framerX.png)
-
 I got bored by telling friends while early testing 'Oh, that part is not yet designed, check this one...'! I want more realistic prototypes without creating endless combinations!
 
 And I discovered the new shiny thing, and this one is not interesting just because it's new, this seems usable too!
