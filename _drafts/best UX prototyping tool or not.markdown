@@ -28,7 +28,7 @@ And I discovered the new shiny thing, and this one is not interesting just becau
 
 You can use video, maps, login, scroll horizontally/vertically, and more!
 
-Check more about prototype features at [Framer Prototype](https://www.framer.com/prototyping/).
+Check more about prototype features at <a href="https://www.framer.com/books/framer-guide-to-react/" target="_blank">Framer Prototype</a>(https://www.framer.com/prototyping/).
 
 The good thing for code loving designers is that you can create code components and use React for prototyping! More about Framer & React at <a href="https://www.framer.com/books/framer-guide-to-react/" target="_blank">FRAMER GUIDE TO REACT</a>.
 
