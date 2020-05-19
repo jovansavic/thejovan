@@ -20,8 +20,21 @@ I got bored by telling friends while early testing 'Oh, that part is not yet des
 
 And I discovered the new shiny thing, and this one is not interesting just because it's new, this seems usable too!
 
-This Intro won't tell you much about it but feel free to take a look. 
+## This Intro won't tell you much about it but feel free to take a look. 
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/foSkKVtHkM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+## What's the deal about it? 
+
+You can use video, maps, login, scroll horizontally/vertically, and more!
+
+Check more about prototype features at [Framer Prototype](https://www.framer.com/prototyping/). 
+
+The good thing for code loving designers is that you can create code components and use React for prototyping! More about Framer & React at [FRAMER GUIDE TO REACT](https://www.framer.com/books/framer-guide-to-react/).
+
+Framer seems like a great tool, I didn't fully switch from Adobe XD, but as I need to create more realistic prototypes I will transition to Framer. 
+
+If you want to get started with Framer you can watch their quick [Framer 101 Crash Course](https://www.framer.com/learn/course/crash-course). 
+
+I wish you luck and keep hacking! 
