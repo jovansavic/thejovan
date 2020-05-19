@@ -20,5 +20,8 @@ I got bored by telling friends while early testing 'Oh, that part is not yet des
 
 And I discovered the new shiny thing, and this one is not interesting just because it's new, this seems usable too!
 
+This Intro won't tell you much about it but feel free to take a look. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/foSkKVtHkM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
