@@ -30,7 +30,7 @@ You can use video, maps, login, scroll horizontally/vertically, and more!
 
 Check more about prototype features at [Framer Prototype](https://www.framer.com/prototyping/).
 
-The good thing for code loving designers is that you can create code components and use React for prototyping! More about Framer & React at [FRAMER GUIDE TO REACT](https://www.framer.com/books/framer-guide-to-react/).
+The good thing for code loving designers is that you can create code components and use React for prototyping! More about Framer & React at <a href="https://www.framer.com/books/framer-guide-to-react/" target="_blank">FRAMER GUIDE TO REACT</a>.
 
 Framer seems like a great tool, I didn't fully switch from Adobe XD, but as I need to create more realistic prototypes I will transition to Framer.
 
