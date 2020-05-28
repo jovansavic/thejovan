@@ -1,0 +1,36 @@
+.client-pain-section
+  padding-top: 4rem
+  padding-bottom: 4rem
+  .wrap
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: $small-bp)
+      flex-wrap: wrap
+
+    .title
+      width: 480px
+      max-width: 100%
+      font-size: 3rem
+      margin: 0
+      @media (max-width: $medium-bp)
+        font-size: 2rem
+
+
+    .text
+      max-width: 620px
+
+      p
+        font-size: 1.5rem
+        font-weight: 500
+        margin-top: 1rem
+        @media (max-width: $medium-bp)
+          font-size: 1rem
+
+
+      ul
+        margin-top: 1rem
+        li
+          font-size: 1rem
+          &:last-child
+            list-style-type: none

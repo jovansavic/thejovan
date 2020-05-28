@@ -48,9 +48,9 @@
     display: flex
     align-items: center
     .logo
-      width: 20px
-      height: 20px
-      font-size: 12px
+      width: 36px
+      height: 36px
+      font-size: 16px
       font-weight: 900
       align-items: center
       justify-content: center
@@ -119,9 +119,9 @@
 .menu-toggle
   @media (min-width: 801px)
     display: none
-  width: 40px
-  height: 40px
-  border-radius: 16px
+  width: 36px
+  height: 36px
+  border-radius: 8px
   background: $nav-title-bg
   position: relative
 
@@ -132,19 +132,20 @@
     display: block
     content: ''
     position: absolute
-    width: 24px
-    height: 2px
+    width: 20px
+    height: 3px
+    border-radius: 3px
     background: $nav-title-color
   span
-    top: 50%
+    top: 45%
     left: 8px
 
   span:before
     left: 0
-    top: -8px
+    top: -7px
   span:after
     left: 0
-    bottom: -8px
+    bottom: -7px
 
   &.open
     span,
