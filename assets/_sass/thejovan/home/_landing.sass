@@ -1,6 +1,18 @@
 .landing-section
-  padding-top: 4rem
-  padding-bottom: 4rem
+  padding-top: 6rem
+  padding-bottom: 6rem
+  overflow: hidden
+  position: relative
+  min-height: 100vh
+  background: url("/assets/images/hero-jovan.png")
+  background-size: auto 100%
+  background-repeat: no-repeat
+  background-position: right
+  background-attachment: fixed
+
+  @media (max-width: $small-bp)
+    background-size: 120% auto
+    background-position: right bottom
 
 
   @media (max-width: $medium-bp)
@@ -19,10 +31,18 @@
     flex-wrap: wrap
 
 
+  .title
+    font-size: 64px
+    margin-bottom: 3rem
+    .gradient-text
+      background: linear-gradient(30deg, #168CDA, #FF3366)
+
+    @media (max-width: $small-bp)
+      font-size: 32px
 
   .text
     padding-right: 4rem
-    width: 60%
+    max-width: 800px
     margin-top: 2.5rem
     @media (max-width: $medium-bp)
       width: 100%
@@ -44,10 +64,18 @@
       margin-bottom: 1.5rem
 
 
-img
-  width: 38%
-  @media (max-width: $medium-bp)
-    width: 100%
-
+  img
+    max-height: 100%
+    position: absolute
+    top: 4rem
+    z-index: -1
+    right: 0
+    opacity: .6
+    @media (max-width: $medium-bp)
+      top: auto
+      right: auto
+      left: 0
+      bottom: 0
+      width: 120%
 
 
