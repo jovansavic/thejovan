@@ -3,11 +3,9 @@ import $ from 'jquery';
 const Header = {
   cloneMenu: function() {
 
-    const $firstNav = $('.first-nav').clone(true);
-    const $secondNav = $('.second-nav').clone(true);
+    const $siteNav = $('.site-nav').clone(true);
 
-    $('#mobile-menu, .menu-items').append($firstNav);
-    $('#mobile-menu, .menu-items').append($secondNav);
+    $('#mobile-menu, .menu-items').append($siteNav);
   },
   toggleMobileMenu: function() {
     $('#menu-toggle').on('click', function() {
