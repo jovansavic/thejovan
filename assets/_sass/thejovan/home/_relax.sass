@@ -1,0 +1,52 @@
+.relax-section
+  padding-top: 4rem
+  padding-bottom: 4rem
+
+  .title
+    font-size: 96px
+    text-align: center
+    line-height: 1.4
+
+    @media (max-width: $medium-bp)
+      font-size: 64px
+
+  .paragraph
+    max-width: 650px
+    margin: auto
+    margin-top: 2rem
+    text-align: center
+
+  .wrap
+    display: flex
+    margin-top: 3rem
+
+    @media (max-width: $medium-bp)
+      flex-direction: column
+
+
+  .testimonial
+    background: $negative-bg
+    padding: 2rem
+    margin: .5rem
+
+    .paragraph
+      color: $negative-title-color
+      text-align: left
+      margin: 0
+      margin-top: 1.5rem
+
+      @media (max-width: $medium-bp)
+        margin-top: 1rem
+
+    .job-title
+      font-weight: 700
+
+    &:nth-child(1)
+      aside
+        color: #FF2244
+    &:nth-child(2)
+      aside
+        color: #0088FF
+    &:nth-child(3)
+      aside
+        color: #00DD66
