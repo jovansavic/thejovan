@@ -1,0 +1,59 @@
+.goal-focused-section
+  padding-top: 4rem
+  padding-bottom: 4rem
+
+  .intro
+    padding-bottom: 96px
+    .title
+      font-size: 96px
+      @media (max-width: $medium-bp)
+        font-size: 48px
+      .gradient-text
+        background: linear-gradient(30deg, #75BCFF, #3344FF)
+
+    .description
+      width: 55%
+      @media (max-width: $medium-bp)
+        width: 100%
+
+
+  .goal-testimonial
+    background: url("/assets/images/helpjuice-ss.png")
+    background-size: 40%
+    background-repeat: no-repeat
+    background-position: center right
+
+    @media (max-width: $medium-bp)
+      background: none
+
+
+    .btn
+      margin-top: 2rem
+      font-size: 1rem
+      background: rgba(0, 153, 255, .1)
+      color: rgb(77, 123, 255)
+
+    .hj-testimonial
+      width: 55%
+      @media (max-width: $medium-bp)
+        width: 100%
+      .paragraph
+        margin-top: 1.5rem
+        font-size: 1rem
+
+
+      .avatar
+        display: flex
+        margin-top: 2rem
+        .img
+          width: 64px
+          height: 64px
+          background: url("/assets/images/hajrice.png")
+          background-size: cover
+        .text
+          margin-left: 1rem
+          aside
+            font-size: 1.5rem
+            color: $title-color
+            &:last-child
+              font-weight: 700
