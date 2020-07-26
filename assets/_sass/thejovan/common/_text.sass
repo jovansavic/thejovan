@@ -42,6 +42,9 @@
   -webkit-background-clip: text!important
   -webkit-text-fill-color: transparent!important
   display: block
+  animation-name: gradient-animation
+  animation-duration: 2.5s
+  animation-iteration-count: infinite
 
 h1, h2, h3, h4, h5, h6, strong, a, li
   color: $title-color
@@ -53,3 +56,14 @@ p
 li
   line-height: 1.6
 
+
+
+
+
+@keyframes gradient-animation
+  0%
+    background-size: 100%
+  50%
+    background-size: 200%
+  100%
+    background-size: 100%

@@ -14,6 +14,26 @@ const Header = {
 
     });
   },
+  triggerAnimation: function() {
+    function isScrolledIntoView(elem) {
+      const docViewTop = $(window).scrollTop();
+      const docViewBottom = docViewTop + screen.height;
+      const elemTop = $(elem).offset().top;
+      return (elemTop <= docViewBottom-150);
+    }
+    function handleTriggering() {
+      $('[data-animate]').each(function() {
+        if (isScrolledIntoView(this) === true) {
+          $(this).addClass('animated');
+        }
+      });
+    }
+
+    $(window).scroll(function() {
+      handleTriggering();
+    });
+    handleTriggering();
+  },
   tooltip: function() {
     $('.site-header a[data-title]').hover(function() {
       const $tooltip = `<aside class="tooltip">${$(this).attr('data-title')}</aside>`;
@@ -59,10 +79,12 @@ const Header = {
     this.themeSwitch();
     this.cloneMenu();
     this.toggleMobileMenu();
+    this.triggerAnimation();
     this.imageModal();
     if ($(window).width() > 800 ) this.tooltip();
   },
 };
+
 
 $(document).ready( function() {
   Header.init();
